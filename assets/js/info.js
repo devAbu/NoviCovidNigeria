@@ -6,7 +6,7 @@ $.get("https://devabu.github.io/NoviCovidNigeria/php/getData.php", function (dat
             return /\S/.test(str);
       });
 
-      console.log(array[5]);
+      console.log(array);
 
       document.getElementById("total").innerHTML = `<div class="stats">
         <div class="number">${array[3]} </div>
