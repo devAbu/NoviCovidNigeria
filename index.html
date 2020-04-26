@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Nigeria-COVID-19</title>
+</head>
+
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navigation-wrap bg-light start-header start-style">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"
+                                alt="logo"></a>Nigeria - COVID-19
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="volunteer.html">Volunteer</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="galery.html">Galery</a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link" href="#">
+                                        <div class="text-danger">Donate</div>
+                                    </a>
+                                </li>
+                                <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <a class="nav-link disabled" href="#"> <mark>NCDC TOLL FREE NUMBER :
+                                            080097000010</mark></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAP -->
+    <section id="map-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div id="chartdiv">
+                    </div>
+                    <div class="legend">
+                        <div class="row">
+                            <div class="col">
+                                <div id="good-attribute-chart"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 center" style="max-height:100vh;">
+                    <div class="headernumbers">
+                        <div id="total" class="card">
+                            <div class="stats">
+                                <div class="number"></div>
+                                <div class="factor text-success">Total Confirmed cases
+                                </div>
+                            </div>
+                        </div>
+                        <div id="recover" class="card">
+                            <div class="stats">
+                                <div class="number"></div>
+                                <div class="factor">Discharged</div>
+                            </div>
+                        </div>
+                        <div id="dead" class="card">
+                            <div class="stats">
+                                <div class="number"></div>
+                                <div class="factor text-danger">Death</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CHART -->
+    <section id="chart-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="chartContainer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NUMBERS -->
+    <section id="info" class="pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title text-center">
+                        <h4 class="pt-4">Directory of COVID-19 State Helpline</h4>
+                        <p class="p-under">If you have any information regarding an infected person, please call one of
+                            the following numbers :</p>
+                        <form action="#">
+                            <strong>Select State</strong> : <select style="margin-bottom: 30px; width: 300px;"
+                                name="names" onchange="citys(this.value)">
+                                <option value="NORTH CENTRAL">North Central</option>
+                                <option value="NORTH WEST">North West</option>
+                                <option value="NORTH EAST">North East</option>
+                                <option value="SOUTH SOUTH">South South</option>
+                                <option value="SOUTH EAST">South East</option>
+                                <option value="SOUTH WEST">South West</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="callNumbers"></div>
+    </section>
+    <!-- SAFETY -->
+    <section id="safety">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title text-center">
+                        <h4 class="pt-4">Protection from COVID-19</h4>
+                        <p class="safety-p pb-2">Bellow you can find different vieos containing information regarding
+                            COVID-19</p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="tabset">
+                            <!--Tabs-->
+                            <input type="radio" name="tabset" id="tab1" aria-controls="video" checked>
+                            <label for="tab1">Some Facts About Covid-19</label>
+                            <input type="radio" name="tabset" id="tab2" aria-controls="clanak1">
+                            <label for="tab2">Covid-19 is not Airborne</label>
+                            <input type="radio" name="tabset" id="tab3" aria-controls="dodatneInf">
+                            <label for="tab3">TestingSome Information About Covid-19</label>
+                            <!--/Tabs-->
+
+                            <div class="tab-panels">
+                                <!--Video Tab-->
+                                <section id="vido" class="tab-panel">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4 class="text-center pb-2">Some Facts About Covid-19</h4>
+                                            <hr>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe src="https://www.youtube.com/embed/G-wB_IANUzw" frameborder="0"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!--/Video Tab-->
+                                <!--Clanak Tab-->
+                                <section id="clanak1" class="tab-panel">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4 class="text-center pb-2">Covid-19 is not Airborne - A Message from the
+                                                Nigeria Centre for Disease Control</h4>
+                                            <hr>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe src="https://www.youtube.com/embed/_Ea2slBwD_A" frameborder="0"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!--/Clanak Tab-->
+                                <!--Dodatne Inf Tab-->
+                                <section id="dodatneInf" class="tab-panel">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4 class="text-center pb-2">TestingSome Information About Covid-19 Testing
+                                                by the Nigeria Centre for Disease Control</h4>
+                                            <hr>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe src="https://www.youtube.com/embed/PToko-KysHs" frameborder="0"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!--/Dodatne Inf Tab-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- PARTNERS -->
+    <div class="section-title text-center">
+        <h4 class="pt-4 pb-3">Our Partners</h4>
+    </div>
+    <div class="row mx-2 text-center">
+        <div class="col-sm-3">
+            <div class="p-2 shadow rounded">
+                <img src="assets/images/partner1.png" class="img-fluid" alt="Responsive image" style="height: 80px;">
+                <h4>Julius Berger</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="p-2 shadow rounded">
+                <img src="assets/images/partner2.png" class="img-fluid" alt="Responsive image" style="height: 80px;">
+                <h4>Nordic Hotel</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="p-2 shadow rounded">
+                <img src="assets/images/partner3.png" class="img-fluid" alt="Responsive image" style="height: 80px;">
+                <h4>Rotary International</h4>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="p-2 shadow rounded">
+                <img src="assets/images/partner4.png" class="img-fluid" alt="Responsive image" style="height: 80px;">
+                <h4>NCDCC</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="pt-5"></div>
+    <section id="footer">
+        <hr>
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left pb-2">
+                <div class="col-xs-12 col-sm-4 col-md-6">
+                    <h5>About us</h5>
+                    <p style="font-size:16px;">Covid-19 Connect NG is a Pan African group volunteering to help reduce
+                        the risk and spread of
+                        covid-19 through proper sensitization and awareness. We have over 250 volunteers currently (and
+                        we are growing) who have been trained on the World Health Organization Operational Guidelines
+                        for Country Level Covid-19 Preparedness and Response.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                        <li><a href="volunteer.html"><i class="fa fa-angle-double-right"></i>Volunteer</a></li>
+                        <li><a href="galery.html"><i class="fa fa-angle-double-right"></i>Galery</a></li>
+                        <li><a href="#" class="text-danger"><i
+                                    class="fa fa-angle-double-right text-danger"></i>Donate</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <h5>Contact us</h5>
+                    <form id='contact-form' method='POST'><input type='hidden' name='form-name' value='contactForm' />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="email" class="form-control" id="first-name"
+                                        placeholder="Enter Your Email *" required="required">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="email" name="subject" class="form-control" id="email"
+                                        placeholder="Enter The Subject *" required="required">
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea rows="4" name="message" class="form-control" id="description"
+                                        placeholder="Enter Your Message *" required="required"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <!--contact button-->
+                                <button class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <br>
+                    <p class="h6"><a class="text-green ml-2" href="https://www.viccoshop.com.tr"
+                            target="_blank"><strong>AbocDev</strong></a>
+                        <font color="#000000">© 2020 All right reserved.</font>
+                    </p>
+                    <font color="#000000">
+                    </font>
+                </div>
+                <font color="#000000">
+
+                </font>
+            </div>
+            <font color="#000000">
+            </font>
+        </div>
+        <font color="#000000">
+        </font>
+    </section>
+    <font color="#000000">
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- AMCHARTS -->
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/nigeriaLow.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-base.min.js"></script>
+        <!-- Custom jS -->
+        <script src="assets/js/amchart.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/chart.js"></script>
+        <script src="assets/js/info.js"></script>
+        <script src="assets/js/juhu.js"></script>
+
+</body>
+
+</html>
