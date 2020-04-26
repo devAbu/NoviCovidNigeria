@@ -123,7 +123,7 @@ am4core.ready(function () {
         })
     }
 
-    $.get("https://devabu.github.io/NoviCovidNigeria/php/getCities.php", function (data) {
+    $.get("http://localhost/github/NoviCovidNigeria/php/getCities.php", function (data) {
         var juhu = data.replace("\n", "");
         var juhu = data.split("\n");
 

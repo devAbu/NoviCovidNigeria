@@ -1,4 +1,4 @@
-$.get("https://devabu.github.io/NoviCovidNigeria/php/getData.php", function (data) {
+$.get("http://localhost/github/NoviCovidNigeria/php/getData.php", function (data) {
       var juhu = data.replace("\n", "");
       var juhu = data.split("\n");
 
